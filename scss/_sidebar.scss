@@ -1,0 +1,18 @@
+.sidebar {
+  flex: 0 0 450px;
+  height: calc(100vh - 55px);
+  overflow-y: scroll;
+}
+
+.listing-list {
+  padding: 0;
+  margin: 0;
+}
+
+.listing-item {
+  list-style-type: none;
+}
+
+.listing-item-image {
+  max-width: 100px;
+}

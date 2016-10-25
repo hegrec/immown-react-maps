@@ -1,0 +1,21 @@
+.header {
+  align-items: center;
+  background-color: #50a4e5;
+  display: flex;
+  font-family: sans-serif;
+  flex: 0 0 55px;
+}
+
+.header-logo {
+  height: 30px;
+  padding-left: 3rem;
+  padding-right: 1rem;
+}
+
+.header-search-input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 300px;
+}
