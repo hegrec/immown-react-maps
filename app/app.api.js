@@ -1,7 +1,7 @@
 class API {
   _sendRequest(url, params, method = 'GET') {
     const httpRequest = new XMLHttpRequest();
-    const queryString = this.buildQueryString(params);
+    const queryString = API.buildQueryString(params);
     const promise = new Promise((resolve, reject) => {
       httpRequest.addEventListener('load', function() {
         resolve(JSON.parse(this.responseText));
@@ -24,7 +24,7 @@ class API {
     return promise;
   }
 
-  buildQueryString(params) {
+  static buildQueryString(params) {
     const paramList = [];
 
     for (let param in params) {

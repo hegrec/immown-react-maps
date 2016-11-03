@@ -63,6 +63,7 @@ module.exports = {
       middleware: [iconsProxy, sidebarProxy],
       files: [
         "./build/app.css",
+        "./build/index.html",
         "./build/img/**/*",
         {
           match: ["./scss/**/*.scss"],
@@ -78,6 +79,12 @@ module.exports = {
           match: ["./img/**/*"],
           fn: function(event, file) {
             shell.cp("-R", "./img", "./build/img");
+          }
+        },
+        {
+          match: "./index.html",
+          fn: function(event, file) {
+            shell.cp("./index.html", "./build/index.html");
           }
         }
       ]
